@@ -1,31 +1,50 @@
-# ♟️ Desafio Final de Xadrez em C — Movimentos Complexos
+# 🏰 Simulação de Movimentos de Peças de Xadrez em C
 
-Este projeto em C simula os movimentos das principais peças do xadrez: **Bispo**, **Torre**, **Rainha** e **Cavalo**, organizando os níveis de dificuldade e aplicando técnicas de **recursividade** e **loops complexos**. Ideal para reforçar lógica de programação e estruturas de controle em C! 🚀
-
----
-
-## 🎯 Objetivo do Projeto
-
-A proposta é treinar movimentos de peças de xadrez com diferentes níveis de complexidade:
-
-- ✅ Substituição de laços simples por **funções recursivas** para simular movimentos da **Torre**, **Bispo** e **Rainha**
-- ✅ Uso de **loops aninhados** e **controle de fluxo (break/continue)** para os movimentos do **Cavalo**
-- ✅ Impressão clara de cada movimento no terminal, com separação por nível de dificuldade
+Este projeto implementa uma simulação didática dos movimentos básicos de algumas peças do xadrez (Bispo, Torre, Rainha e Cavalo) utilizando programação em linguagem C. O foco está na demonstração de técnicas recursivas e iterativas para controlar os passos das peças no tabuleiro.
 
 ---
 
-## 📌 Organização por Nível
+## 🔍 Visão Geral
 
-### 🟢 **NÍVEL NOVATO**
-Implementações simples com loops `for` para simular:
+O programa é executado em ambiente terminal, apresentando diferentes níveis de complexidade para os movimentos:
 
-- Bispo: movimento diagonal superior direita (`Cima + Direita`)
-- Torre: movimento lateral (`Direita`)
-- Rainha: movimento lateral oposto (`Esquerda`)
+- **Nível Novato:** Movimentos básicos impressos iterativamente para Bispo, Torre e Rainha.
+- **Nível Aventureiro:** Movimento iterativo do Cavalo simulando o movimento em “L”.
+- **Nível Mestre:** Movimentos recursivos para Bispo, Torre e Rainha, além de movimento avançado do Cavalo.
 
-### 🟡 **NÍVEL AVENTUREIRO**
-Movimento do **Cavalo** em “L” feito com:
+---
 
-```c
-for + while
-if/else
+## 🧩 Movimento das Peças
+
+Cada peça possui movimentos específicos simulados por funções distintas:
+
+- **Bispo:** Move-se na diagonal, simulando "Cima + Direita".
+- **Torre:** Move-se na horizontal para a direita.
+- **Rainha:** Move-se na horizontal para a esquerda.
+- **Cavalo:** Movimento em “L” com passos verticais e horizontais combinados.
+
+---
+
+## ⚙️ Funcionalidades do Código
+
+### 🌀 Movimentos Recursivos  
+As funções `moverBispoRecursivo`, `moverTorreRecursiva` e `moverRainhaRecursiva` implementam movimentos recursivos, imprimindo cada passo até o número definido.
+
+### 🔁 Movimentos Iterativos  
+Os movimentos do Cavalo são simulados por laços `for` e `while` em `moverCavaloL` e `moverCavaloLAvancado`, mostrando os passos sequenciais.
+
+### 📊 Níveis de Complexidade  
+O código organiza a execução em níveis, permitindo acompanhar a evolução da complexidade dos movimentos das peças.
+
+---
+
+## 📌 Objetivo Educacional
+
+Este projeto é ideal para:
+
+- Praticar conceitos básicos e avançados de recursão em C.
+- Compreender a estruturação de funções iterativas e recursivas.
+- Exercitar lógica condicional, loops e saída formatada no terminal.
+- Aplicar conceitos de programação procedural em um contexto clássico e didático.
+
+---
